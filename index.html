@@ -16,6 +16,7 @@
     <meta name="theme-color" content="#212121">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
+    <meta name="description" content="Random password generator.">
 </head>
 
 <body>
@@ -56,6 +57,18 @@
         </main>
     </div>
     <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => {
+                        console.log('Registered', reg)
+                    }).catch(err => {
+                        console.log('Registration Failed ', err);
+                    })
+            })
+        }
+    </script>
 </body>
 
 </html>
