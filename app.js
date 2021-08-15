@@ -117,7 +117,7 @@ function randomNumber() {
 }
 
 function randomSymbol() {
-    let symbols = ['!', '#', '$', '%', '&', '*', '-', '.', '=', '_'];
+    let symbols = ['!', '#', '$', '%', '&', '*', '-', '.', '=', '_', '@', '<', '>', '?', ',', ';'];
     let value = symbols[getRandomFrom(0, symbols.length - 1)];
     return createSpanElement('char_symbol', value);
 }
