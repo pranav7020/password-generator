@@ -11,11 +11,11 @@
   --background-color: #212121;
   --primary-color: #2cadf6;
   --secondary-color: #a5a5a5;
-  --lowercase: #9b98a6;
-  --uppercase: #e3e0e9;
+  --lowercase: #63add6;
+  --uppercase: #55dfed;
   --number: #58d6bf;
-  --symbol: #ee7c6d;
-  --range: #f97c1c;
+  --symbol: #4d8cf7;
+  --range: #ed7461;
 }
 
 body {
@@ -171,8 +171,23 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label {
-  color: var(--default-color);
   box-shadow: inset 3px 3px 5px #1b1a1a, inset -3px -3px 5px #2b2b2b;
+}
+
+#lowercase:checked + label {
+  color: var(--lowercase);
+}
+
+#uppercase:checked + label {
+  color: var(--uppercase);
+}
+
+#number:checked + label {
+  color: var(--number);
+}
+
+#symbol:checked + label {
+  color: var(--symbol);
 }
 
 button {

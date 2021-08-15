@@ -1,4 +1,4 @@
-const newCacheName = `passwd-gen-V-1.0`;
+const newCacheName = `passwd-gen-V-1.1`;
 
 const filesToCache = [
     `/`,
